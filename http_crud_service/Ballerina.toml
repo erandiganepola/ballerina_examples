@@ -1,5 +1,8 @@
 [package]
-distribution = "2201.1.1"
+org = "erandi"
+name = "http_crud_service"
+version = "0.1.0"
+distribution = "2201.3.1"
 
 [build-options]
 observabilityIncluded = true
