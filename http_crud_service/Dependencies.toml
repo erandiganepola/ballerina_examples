@@ -307,7 +307,7 @@ modules = [
 ]
 
 [[package]]
-org = "erandiganepola"
+org = "erandi"
 name = "http_crud_service"
 version = "0.1.0"
 dependencies = [
@@ -317,8 +317,8 @@ dependencies = [
 	{org = "ballerinai", name = "observe"}
 ]
 modules = [
-	{org = "erandiganepola", packageName = "http_crud_service", moduleName = "http_crud_service"},
-	{org = "erandiganepola", packageName = "http_crud_service", moduleName = "http_crud_service.types"}
+	{org = "erandi", packageName = "http_crud_service", moduleName = "http_crud_service"},
+	{org = "erandi", packageName = "http_crud_service", moduleName = "http_crud_service.types"}
 ]
 
 
