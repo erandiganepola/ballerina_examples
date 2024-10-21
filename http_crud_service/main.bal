@@ -8,12 +8,20 @@ service /products on new http:Listener(8080) {
 
     private map<types:Product> products = {};
 
+    public function init() {
+        self.products["90090087"] = {
+            id: "90090087",
+            price: {currency: "USD", amount: 90.10},
+            name: "T Shirt",
+            description: "Test Shirt"
+        };
+    }
+
     # List all products
     # + return - List of products
     resource function get .() returns types:Product[] {
         return self.products.toArray();
     }
-
 
     # Add a new product
     #
