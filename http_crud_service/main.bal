@@ -29,6 +29,21 @@ service /products on new http:Listener(8080) {
         return self.products.toArray();
     }
 
+    # Get a single product by ID
+    #
+    # + productId - Product ID
+    # + return - Product or not found
+    resource function get [string productId]() returns types:Product|http:NotFound {
+        if !self.products.hasKey(productId) {
+            log:printWarn("Product not found", productId = productId);
+            return <http:NotFound>{
+            };
+        }
+
+        return self.products.get(productId);
+
+    }
+
     # Add a new product
     #
     # + product - Product to be added
