@@ -15,6 +15,12 @@ service /products on new http:Listener(8080) {
             name: "T Shirt",
             description: "Test Shirt"
         };
+        self.products["90090088"] = {
+            id: "90090088",
+            price: {currency: "USD", amount: 100.10},
+            name: "Trouser",
+            description: "Test Trouser"
+        };
     }
 
     # List all products

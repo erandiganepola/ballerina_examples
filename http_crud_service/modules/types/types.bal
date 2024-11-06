@@ -1,6 +1,7 @@
 import ballerina/http;
 # Represents a product
 #
+# + id - Product ID
 # + name - Name of the product  
 # + description - Product description  
 # + price - Product price

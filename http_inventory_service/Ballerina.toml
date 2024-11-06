@@ -1,0 +1,8 @@
+[package]
+org = "erandi"
+name = "http_inventory_service"
+version = "0.1.0"
+distribution = "2201.3.5"
+
+[build-options]
+observabilityIncluded = true
